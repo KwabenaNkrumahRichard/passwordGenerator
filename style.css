@@ -182,6 +182,7 @@ button {
   font-weight: bolder;
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
+  color: rgb(8, 7, 11);
   background-color: rgb(163, 255, 174);
   border: none;
 }
