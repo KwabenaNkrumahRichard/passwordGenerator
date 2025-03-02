@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <script async src="script.js"></script>
+  </head>
+  <body>
+    <div class="main-content">
+      <header>
+        <h1>Password Generator</h1>
+        <div class="password-container">
+          <span class="password">P4$5W0rD!</span>
+          <span class="copy-icon">
+            <span class="copy-text"></span>
+            <img src="./assets/images/icon-copy.svg" alt="" class="img" />
+          </span>
+        </div>
+      </header>
+
+      <form action="">
+        <div class="form-header">
+          <span class="character">Character Length</span>
+          <span class="password-length">4</span>
+        </div>
+
+        <input type="range" min="4" max="20" value="4" />
+
+        <div class="uppercase">
+          <input type="checkbox" id="uppercase" name="uppercase" />
+          <label for="uppercase"
+            ><span class="checkbox"></span>Include Uppercase Letter(s)</label
+          >
+        </div>
+
+        <div class="lowercase">
+          <input type="checkbox" id="lowercase" name="lowercase" checked />
+          <label for="lowercase"
+            ><span class="checkbox"></span>Include Lowercase Letter(s)</label
+          >
+        </div>
+
+        <div class="number">
+          <input type="checkbox" id="number" name="number" checked />
+          <label for="number"
+            ><span class="checkbox"></span>Include Number(s)</label
+          >
+        </div>
+
+        <div class="symbols">
+          <input type="checkbox" id="symbols" name="symbols" />
+          <label for="symbols"
+            ><span class="checkbox"></span>Include Symbol(s)</label
+          >
+        </div>
+
+        <div class="strength">
+          <p>STRENGTH</p>
+          <span class="text"></span>
+          <div class="bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+
+        <button type="submit">
+          GENERATE <img src="assets/images/icon-arrow-right.svg" alt="" />
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
